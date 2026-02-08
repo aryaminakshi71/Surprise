@@ -1,0 +1,234 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e5]:
+        - link "Surprise" [ref=e6]:
+          - /url: /
+          - img [ref=e8]
+          - text: Surprise
+        - generic [ref=e12]:
+          - link "Features" [ref=e13]:
+            - /url: "#features"
+          - link "Pricing" [ref=e14]:
+            - /url: "#pricing"
+          - link "Find Parking" [ref=e15]:
+            - /url: /reserve
+          - link "Try Demo" [ref=e16]:
+            - /url: /demo
+          - link "Sign In" [ref=e17]:
+            - /url: /login
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - img [ref=e21]
+        - text: Smart Parking Management
+      - heading "Surprise Made Simple" [level=1] [ref=e23]
+      - paragraph [ref=e24]: Streamline parking operations with token management, real-time tracking, and automated payments.
+      - generic [ref=e25]:
+        - link "Reserve a spot" [ref=e26]:
+          - /url: /reserve
+          - text: Reserve a spot→
+        - link "View dashboard" [ref=e27]:
+          - /url: /dashboard
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - heading "Everything You Need" [level=2] [ref=e31]
+        - paragraph [ref=e32]: Powerful features for parking management
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - img [ref=e36]
+          - text: Simple
+          - heading "Simple Operations" [level=3] [ref=e40]
+          - paragraph [ref=e41]: Launch workflows in minutes with guided setup.
+        - generic [ref=e42]:
+          - img [ref=e44]
+          - text: Analytics
+          - heading "Analytics" [level=3] [ref=e46]
+          - paragraph [ref=e47]: Real-time insights with KPI dashboards and trends.
+        - generic [ref=e48]:
+          - img [ref=e50]
+          - text: Security
+          - heading "Security" [level=3] [ref=e52]
+          - paragraph [ref=e53]: Role-based access with audit trails and alerts.
+        - generic [ref=e54]:
+          - img [ref=e56]
+          - text: API
+          - heading "API & Integrations" [level=3] [ref=e59]
+          - paragraph [ref=e60]: Connect your tools via a type-safe API.
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - img [ref=e66]
+        - heading "Simple APIs" [level=3] [ref=e69]
+        - paragraph [ref=e70]: RESTful APIs with comprehensive documentation
+      - generic [ref=e71]:
+        - img [ref=e73]
+        - heading "Multi-Language" [level=3] [ref=e76]
+        - paragraph [ref=e77]: Support for 10+ languages and regional compliance
+      - generic [ref=e78]:
+        - img [ref=e80]
+        - heading "Usage Analytics" [level=3] [ref=e82]
+        - paragraph [ref=e83]: Real-time dashboards and detailed reports
+      - generic [ref=e84]:
+        - img [ref=e86]
+        - heading "Enterprise Security" [level=3] [ref=e88]
+        - paragraph [ref=e89]: SOC 2 aligned with audit trails
+    - generic [ref=e91]:
+      - generic [ref=e92]:
+        - heading "Simple Pricing" [level=2] [ref=e93]
+        - paragraph [ref=e94]: Choose the plan that fits your lot
+        - generic [ref=e95]:
+          - img [ref=e96]
+          - text: Secure payments powered by Stripe
+      - generic [ref=e98]:
+        - generic [ref=e99]:
+          - heading "Free" [level=3] [ref=e100]
+          - generic [ref=e101]: Free
+          - list [ref=e102]:
+            - listitem [ref=e103]:
+              - img [ref=e104]
+              - text: 10 spots
+            - listitem [ref=e106]:
+              - img [ref=e107]
+              - text: Basic features
+            - listitem [ref=e109]:
+              - img [ref=e110]
+              - text: Community support
+            - listitem [ref=e112]:
+              - img [ref=e113]
+              - text: Mobile app
+          - link "Get Started Free" [ref=e115]:
+            - /url: /register
+          - paragraph [ref=e116]: Secure payment via Stripe
+        - generic [ref=e117]:
+          - heading "Starter" [level=3] [ref=e118]
+          - generic [ref=e119]: $29/month
+          - list [ref=e120]:
+            - listitem [ref=e121]:
+              - img [ref=e122]
+              - text: 50 spots
+            - listitem [ref=e124]:
+              - img [ref=e125]
+              - text: Basic reports
+            - listitem [ref=e127]:
+              - img [ref=e128]
+              - text: Email support
+            - listitem [ref=e130]:
+              - img [ref=e131]
+              - text: Real-time tracking
+          - button "Subscribe with Stripe" [ref=e133]
+          - paragraph [ref=e134]: Secure payment via Stripe
+        - generic [ref=e135]:
+          - generic [ref=e136]: Popular
+          - heading "Professional" [level=3] [ref=e137]
+          - generic [ref=e138]: $79/month
+          - list [ref=e139]:
+            - listitem [ref=e140]:
+              - img [ref=e141]
+              - text: 200 spots
+            - listitem [ref=e143]:
+              - img [ref=e144]
+              - text: All features
+            - listitem [ref=e146]:
+              - img [ref=e147]
+              - text: Priority support
+            - listitem [ref=e149]:
+              - img [ref=e150]
+              - text: API access
+            - listitem [ref=e152]:
+              - img [ref=e153]
+              - text: Advanced analytics
+          - button "Subscribe with Stripe" [ref=e155]
+          - paragraph [ref=e156]: Secure payment via Stripe
+        - generic [ref=e157]:
+          - heading "Enterprise" [level=3] [ref=e158]
+          - generic [ref=e159]: Custom
+          - list [ref=e160]:
+            - listitem [ref=e161]:
+              - img [ref=e162]
+              - text: Unlimited spots
+            - listitem [ref=e164]:
+              - img [ref=e165]
+              - text: All features
+            - listitem [ref=e167]:
+              - img [ref=e168]
+              - text: 24/7 support
+            - listitem [ref=e170]:
+              - img [ref=e171]
+              - text: Custom integrations
+            - listitem [ref=e173]:
+              - img [ref=e174]
+              - text: SLA
+          - button "Contact Sales" [ref=e176]
+          - paragraph [ref=e177]: Secure payment via Stripe
+    - generic [ref=e179]:
+      - heading "Stay Updated" [level=2] [ref=e180]
+      - paragraph [ref=e181]: Get parking management tips and product updates.
+      - generic [ref=e182]:
+        - generic [ref=e183]:
+          - heading "Stay Updated" [level=3] [ref=e184]
+          - paragraph [ref=e185]: Get the latest updates, tips, and insights delivered to your inbox.
+        - generic [ref=e186]:
+          - textbox "Enter your email" [ref=e189]
+          - button "Subscribe" [ref=e190]:
+            - text: Subscribe
+            - img [ref=e191]
+        - paragraph [ref=e193]: Join 10,000+ subscribers
+        - paragraph [ref=e194]:
+          - text: No spam, unsubscribe anytime. Read our
+          - link "Privacy Policy" [ref=e195]:
+            - /url: /privacy
+          - text: .
+      - paragraph [ref=e196]: No spam, unsubscribe anytime.
+    - generic [ref=e198]:
+      - generic [ref=e199]:
+        - heading "Frequently Asked Questions" [level=2] [ref=e200]
+        - paragraph [ref=e201]: Everything you need to know
+      - generic [ref=e202]:
+        - button "What is the free trial duration?" [ref=e204]:
+          - text: What is the free trial duration?
+          - img [ref=e205]
+        - button "Is my data secure?" [ref=e208]:
+          - text: Is my data secure?
+          - img [ref=e209]
+        - button "Can I cancel anytime?" [ref=e212]:
+          - text: Can I cancel anytime?
+          - img [ref=e213]
+        - button "Do you offer refunds?" [ref=e216]:
+          - text: Do you offer refunds?
+          - img [ref=e217]
+        - button "What payment methods do you accept?" [ref=e220]:
+          - text: What payment methods do you accept?
+          - img [ref=e221]
+        - button "Do you offer discounts for annual plans?" [ref=e224]:
+          - text: Do you offer discounts for annual plans?
+          - img [ref=e225]
+    - contentinfo [ref=e227]:
+      - generic [ref=e228]:
+        - paragraph [ref=e229]: © 2026 Surprise. All rights reserved. Payments secured by Stripe.
+        - paragraph [ref=e230]: Powered by Stripe for secure payments
+  - navigation [ref=e231]:
+    - generic [ref=e232]:
+      - link "Home" [ref=e233]:
+        - /url: /
+        - img [ref=e235]
+        - text: Home
+      - link "Dashboard" [ref=e238]:
+        - /url: /dashboard
+        - img [ref=e240]
+        - text: Dashboard
+      - link "Reserve" [ref=e245]:
+        - /url: /reserve
+        - img [ref=e247]
+        - text: Reserve
+      - link "Vehicles" [ref=e250]:
+        - /url: /dashboard/vehicles
+        - img [ref=e252]
+        - text: Vehicles
+      - link "Analytics" [ref=e256]:
+        - /url: /dashboard/analytics
+        - img [ref=e258]
+        - text: Analytics
+  - region "Notifications alt+T"
+```

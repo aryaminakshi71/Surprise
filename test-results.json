@@ -1,0 +1,2790 @@
+{
+  "config": {
+    "configFile": "/Users/aryaminakshi/Desktop/newapp/Surprise/playwright.config.ts",
+    "rootDir": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 6
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "mobile-chrome",
+        "name": "mobile-chrome",
+        "testDir": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "mobile-safari",
+        "name": "mobile-safari",
+        "testDir": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 6,
+    "webServer": {
+      "command": "bun run dev",
+      "url": "http://localhost:3000",
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "improvements.spec.ts",
+      "file": "improvements.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "New Features Testing",
+          "file": "improvements.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Dashboard - Real-time statistics",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 11233,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 16,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:34:03.003Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--33648-oard---Real-time-statistics-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--33648-oard---Real-time-statistics-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--33648-oard---Real-time-statistics-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 16,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-72ef8c382a032e42b5f7",
+              "file": "improvements.spec.ts",
+              "line": 9,
+              "column": 3
+            },
+            {
+              "title": "Analytics - Interactive charts",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 11236,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 16,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:34:02.995Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--ddf92-lytics---Interactive-charts-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--ddf92-lytics---Interactive-charts-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--ddf92-lytics---Interactive-charts-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 16,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-eb918f683030fba18bdd",
+              "file": "improvements.spec.ts",
+              "line": 29,
+              "column": 3
+            },
+            {
+              "title": "Filtering system on spots page",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 11544,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 16,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:34:03.012Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--94863-tering-system-on-spots-page-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--94863-tering-system-on-spots-page-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--94863-tering-system-on-spots-page-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 16,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-bf42535c58f20b318093",
+              "file": "improvements.spec.ts",
+              "line": 56,
+              "column": 3
+            },
+            {
+              "title": "Mobile navigation",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 11594,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 16,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:34:03.238Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features-Testing-Mobile-navigation-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features-Testing-Mobile-navigation-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features-Testing-Mobile-navigation-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 16,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-8fda05e208fc4c2f5715",
+              "file": "improvements.spec.ts",
+              "line": 92,
+              "column": 3
+            },
+            {
+              "title": "Error boundary functionality",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 11603,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 16,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:34:03.058Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--aeb3d-rror-boundary-functionality-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--aeb3d-rror-boundary-functionality-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--aeb3d-rror-boundary-functionality-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 16,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-a108e7f8eb7674518554",
+              "file": "improvements.spec.ts",
+              "line": 130,
+              "column": 3
+            },
+            {
+              "title": "Toast notifications",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 11232,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 16,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:34:03.023Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features-Testing-Toast-notifications-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features-Testing-Toast-notifications-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features-Testing-Toast-notifications-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 16,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-d421a829f7ba0eb085cd",
+              "file": "improvements.spec.ts",
+              "line": 155,
+              "column": 3
+            },
+            {
+              "title": "API integration with error handling",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 10948,
+                      "error": {
+                        "message": "TimeoutError: page.waitForSelector: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=Total Spots') to be visible\u001b[22m\n",
+                        "stack": "TimeoutError: page.waitForSelector: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=Total Spots') to be visible\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:177:16",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 16,
+                          "line": 177
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 175 |\u001b[39m     \n \u001b[90m 176 |\u001b[39m     \u001b[90m// Wait for content to load\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 177 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'text=Total Spots'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 178 |\u001b[39m     \n \u001b[90m 179 |\u001b[39m     \u001b[90m// Check if data is displayed (either from API or demo mode)\u001b[39m\n \u001b[90m 180 |\u001b[39m     \u001b[36mconst\u001b[39m statValue \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[class*=\"text-2xl\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 16,
+                            "line": 177
+                          },
+                          "message": "TimeoutError: page.waitForSelector: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=Total Spots') to be visible\u001b[22m\n\n\n\u001b[0m \u001b[90m 175 |\u001b[39m     \n \u001b[90m 176 |\u001b[39m     \u001b[90m// Wait for content to load\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 177 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'text=Total Spots'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 178 |\u001b[39m     \n \u001b[90m 179 |\u001b[39m     \u001b[90m// Check if data is displayed (either from API or demo mode)\u001b[39m\n \u001b[90m 180 |\u001b[39m     \u001b[36mconst\u001b[39m statValue \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[class*=\"text-2xl\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:177:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:34:18.229Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--665ad-gration-with-error-handling-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--665ad-gration-with-error-handling-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--665ad-gration-with-error-handling-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 16,
+                        "line": 177
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-4bf49c7a3c75ec99289c",
+              "file": "improvements.spec.ts",
+              "line": 172,
+              "column": 3
+            },
+            {
+              "title": "Database connectivity",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 10979,
+                      "error": {
+                        "message": "TimeoutError: page.waitForSelector: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('h1:has-text(\"Analytics\")') to be visible\u001b[22m\n",
+                        "stack": "TimeoutError: page.waitForSelector: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('h1:has-text(\"Analytics\")') to be visible\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:199:16",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 16,
+                          "line": 199
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 197 |\u001b[39m     \n \u001b[90m 198 |\u001b[39m     \u001b[90m// If charts render, database connection is working\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 199 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'h1:has-text(\"Analytics\")'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 200 |\u001b[39m     \n \u001b[90m 201 |\u001b[39m     \u001b[90m// Check if metric values are present\u001b[39m\n \u001b[90m 202 |\u001b[39m     \u001b[36mconst\u001b[39m metrics \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[class*=\"text-2xl\"][class*=\"font-bold\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 16,
+                            "line": 199
+                          },
+                          "message": "TimeoutError: page.waitForSelector: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('h1:has-text(\"Analytics\")') to be visible\u001b[22m\n\n\n\u001b[0m \u001b[90m 197 |\u001b[39m     \n \u001b[90m 198 |\u001b[39m     \u001b[90m// If charts render, database connection is working\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 199 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'h1:has-text(\"Analytics\")'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 200 |\u001b[39m     \n \u001b[90m 201 |\u001b[39m     \u001b[90m// Check if metric values are present\u001b[39m\n \u001b[90m 202 |\u001b[39m     \u001b[36mconst\u001b[39m metrics \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[class*=\"text-2xl\"][class*=\"font-bold\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:199:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:34:18.229Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features-Testing-Database-connectivity-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features-Testing-Database-connectivity-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features-Testing-Database-connectivity-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 16,
+                        "line": 199
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-249844153ce8a60803f0",
+              "file": "improvements.spec.ts",
+              "line": 190,
+              "column": 3
+            },
+            {
+              "title": "Dashboard - Real-time statistics",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 13967,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 16,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:34:18.362Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--33648-oard---Real-time-statistics-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--33648-oard---Real-time-statistics-firefox/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 16,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-f58b4dd22a69d24f7da4",
+              "file": "improvements.spec.ts",
+              "line": 9,
+              "column": 3
+            },
+            {
+              "title": "Analytics - Interactive charts",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 17841,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard/analytics\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard/analytics\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:31:16",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 16,
+                          "line": 31
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 29 |\u001b[39m   test(\u001b[32m'Analytics - Interactive charts'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 30 |\u001b[39m     \u001b[90m// Navigate to analytics page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/dashboard/analytics'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 32 |\u001b[39m     \n \u001b[90m 33 |\u001b[39m     \u001b[90m// Wait for analytics page to load\u001b[39m\n \u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'h1:has-text(\"Analytics\")'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 16,
+                            "line": 31
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard/analytics\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 29 |\u001b[39m   test(\u001b[32m'Analytics - Interactive charts'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 30 |\u001b[39m     \u001b[90m// Navigate to analytics page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/dashboard/analytics'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 32 |\u001b[39m     \n \u001b[90m 33 |\u001b[39m     \u001b[90m// Wait for analytics page to load\u001b[39m\n \u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'h1:has-text(\"Analytics\")'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:31:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:34:31.805Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--ddf92-lytics---Interactive-charts-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--ddf92-lytics---Interactive-charts-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--ddf92-lytics---Interactive-charts-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 16,
+                        "line": 31
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-c36f2e62bc7e060605cb",
+              "file": "improvements.spec.ts",
+              "line": 29,
+              "column": 3
+            },
+            {
+              "title": "Filtering system on spots page",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 17524,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard/spots\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard/spots\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:58:16",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 16,
+                          "line": 58
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 56 |\u001b[39m   test(\u001b[32m'Filtering system on spots page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 57 |\u001b[39m     \u001b[90m// Navigate to spots page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/dashboard/spots'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 59 |\u001b[39m     \n \u001b[90m 60 |\u001b[39m     \u001b[90m// Wait for page to load\u001b[39m\n \u001b[90m 61 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'h1:has-text(\"Parking Spots\")'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 16,
+                            "line": 58
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard/spots\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 56 |\u001b[39m   test(\u001b[32m'Filtering system on spots page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 57 |\u001b[39m     \u001b[90m// Navigate to spots page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/dashboard/spots'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 59 |\u001b[39m     \n \u001b[90m 60 |\u001b[39m     \u001b[90m// Wait for page to load\u001b[39m\n \u001b[90m 61 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'h1:has-text(\"Parking Spots\")'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:58:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:34:31.800Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--94863-tering-system-on-spots-page-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--94863-tering-system-on-spots-page-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--94863-tering-system-on-spots-page-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 16,
+                        "line": 58
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-df56a40ebaeb7729251f",
+              "file": "improvements.spec.ts",
+              "line": 56,
+              "column": 3
+            },
+            {
+              "title": "Mobile navigation",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 13185,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 16,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:34:40.350Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features-Testing-Mobile-navigation-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features-Testing-Mobile-navigation-firefox/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 16,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-20e2df994b81f0fb94eb",
+              "file": "improvements.spec.ts",
+              "line": 92,
+              "column": 3
+            },
+            {
+              "title": "Error boundary functionality",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 13947,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 16,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:34:40.929Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--aeb3d-rror-boundary-functionality-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--aeb3d-rror-boundary-functionality-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--aeb3d-rror-boundary-functionality-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 16,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-876a091c771f8994d505",
+              "file": "improvements.spec.ts",
+              "line": 130,
+              "column": 3
+            },
+            {
+              "title": "Toast notifications",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 15059,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 16,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:34:41.212Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features-Testing-Toast-notifications-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features-Testing-Toast-notifications-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features-Testing-Toast-notifications-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 16,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-33f90cbac03a5ae020d0",
+              "file": "improvements.spec.ts",
+              "line": 155,
+              "column": 3
+            },
+            {
+              "title": "API integration with error handling",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 14377,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 16,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:34:41.522Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--665ad-gration-with-error-handling-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--665ad-gration-with-error-handling-firefox/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 16,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-930384312e62615d8a7d",
+              "file": "improvements.spec.ts",
+              "line": 172,
+              "column": 3
+            },
+            {
+              "title": "Database connectivity",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 21811,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard/analytics\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard/analytics\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:193:16",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 16,
+                          "line": 193
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 191 |\u001b[39m     \u001b[90m// Check if app can connect to database by visiting analytics\u001b[39m\n \u001b[90m 192 |\u001b[39m     \u001b[90m// which should load data from the seeded database\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 193 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/dashboard/analytics'\u001b[39m\u001b[33m,\u001b[39m { \n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 194 |\u001b[39m       waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m \n \u001b[90m 195 |\u001b[39m       timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m \n \u001b[90m 196 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 16,
+                            "line": 193
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard/analytics\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 191 |\u001b[39m     \u001b[90m// Check if app can connect to database by visiting analytics\u001b[39m\n \u001b[90m 192 |\u001b[39m     \u001b[90m// which should load data from the seeded database\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 193 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/dashboard/analytics'\u001b[39m\u001b[33m,\u001b[39m { \n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 194 |\u001b[39m       waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m \n \u001b[90m 195 |\u001b[39m       timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m \n \u001b[90m 196 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:193:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:34:54.895Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features-Testing-Database-connectivity-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features-Testing-Database-connectivity-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features-Testing-Database-connectivity-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 16,
+                        "line": 193
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-254b51676669dfccc616",
+              "file": "improvements.spec.ts",
+              "line": 190,
+              "column": 3
+            },
+            {
+              "title": "Dashboard - Real-time statistics",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 22,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 11953,
+                      "error": {
+                        "message": "TimeoutError: page.waitForURL: Timeout 5000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================",
+                        "stack": "TimeoutError: page.waitForURL: Timeout 5000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:12:16",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 16,
+                          "line": 12
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 10 |\u001b[39m     \u001b[90m// Navigate to dashboard\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'a[href=\"/dashboard\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForURL(\u001b[32m'**/dashboard'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m     \n \u001b[90m 14 |\u001b[39m     \u001b[90m// Wait for stats to load (either from API or demo mode)\u001b[39m\n \u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'text=Total Spots'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 16,
+                            "line": 12
+                          },
+                          "message": "TimeoutError: page.waitForURL: Timeout 5000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n\n\u001b[0m \u001b[90m 10 |\u001b[39m     \u001b[90m// Navigate to dashboard\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'a[href=\"/dashboard\"]'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForURL(\u001b[32m'**/dashboard'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m     \n \u001b[90m 14 |\u001b[39m     \u001b[90m// Wait for stats to load (either from API or demo mode)\u001b[39m\n \u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'text=Total Spots'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:12:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:35:07.561Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--33648-oard---Real-time-statistics-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--33648-oard---Real-time-statistics-webkit/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--33648-oard---Real-time-statistics-webkit/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 16,
+                        "line": 12
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-6d86c320e854dc1304e7",
+              "file": "improvements.spec.ts",
+              "line": 9,
+              "column": 3
+            },
+            {
+              "title": "Analytics - Interactive charts",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 23,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 5924,
+                      "error": {
+                        "message": "Error: page.goto: Navigation to \"http://localhost:3000/dashboard/analytics\" is interrupted by another navigation to \"http://localhost:3000/\"\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard/analytics\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "Error: page.goto: Navigation to \"http://localhost:3000/dashboard/analytics\" is interrupted by another navigation to \"http://localhost:3000/\"\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard/analytics\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:31:16",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 16,
+                          "line": 31
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 29 |\u001b[39m   test(\u001b[32m'Analytics - Interactive charts'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 30 |\u001b[39m     \u001b[90m// Navigate to analytics page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/dashboard/analytics'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 32 |\u001b[39m     \n \u001b[90m 33 |\u001b[39m     \u001b[90m// Wait for analytics page to load\u001b[39m\n \u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'h1:has-text(\"Analytics\")'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 16,
+                            "line": 31
+                          },
+                          "message": "Error: page.goto: Navigation to \"http://localhost:3000/dashboard/analytics\" is interrupted by another navigation to \"http://localhost:3000/\"\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard/analytics\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 29 |\u001b[39m   test(\u001b[32m'Analytics - Interactive charts'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 30 |\u001b[39m     \u001b[90m// Navigate to analytics page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/dashboard/analytics'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 32 |\u001b[39m     \n \u001b[90m 33 |\u001b[39m     \u001b[90m// Wait for analytics page to load\u001b[39m\n \u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'h1:has-text(\"Analytics\")'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:31:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:35:07.940Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--ddf92-lytics---Interactive-charts-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--ddf92-lytics---Interactive-charts-webkit/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--ddf92-lytics---Interactive-charts-webkit/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 16,
+                        "line": 31
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-910ea6823a8c62e1a06a",
+              "file": "improvements.spec.ts",
+              "line": 29,
+              "column": 3
+            },
+            {
+              "title": "Filtering system on spots page",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 17406,
+                      "error": {
+                        "message": "Error: page.goto: Navigation to \"http://localhost:3000/dashboard/spots\" is interrupted by another navigation to \"http://localhost:3000/\"\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard/spots\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "Error: page.goto: Navigation to \"http://localhost:3000/dashboard/spots\" is interrupted by another navigation to \"http://localhost:3000/\"\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard/spots\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:58:16",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 16,
+                          "line": 58
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 56 |\u001b[39m   test(\u001b[32m'Filtering system on spots page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 57 |\u001b[39m     \u001b[90m// Navigate to spots page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/dashboard/spots'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 59 |\u001b[39m     \n \u001b[90m 60 |\u001b[39m     \u001b[90m// Wait for page to load\u001b[39m\n \u001b[90m 61 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'h1:has-text(\"Parking Spots\")'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 16,
+                            "line": 58
+                          },
+                          "message": "Error: page.goto: Navigation to \"http://localhost:3000/dashboard/spots\" is interrupted by another navigation to \"http://localhost:3000/\"\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard/spots\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 56 |\u001b[39m   test(\u001b[32m'Filtering system on spots page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 57 |\u001b[39m     \u001b[90m// Navigate to spots page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/dashboard/spots'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 59 |\u001b[39m     \n \u001b[90m 60 |\u001b[39m     \u001b[90m// Wait for page to load\u001b[39m\n \u001b[90m 61 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'h1:has-text(\"Parking Spots\")'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:58:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:35:23.287Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--94863-tering-system-on-spots-page-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--94863-tering-system-on-spots-page-webkit/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--94863-tering-system-on-spots-page-webkit/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 16,
+                        "line": 58
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-7df47a7423bc52bdfaa0",
+              "file": "improvements.spec.ts",
+              "line": 56,
+              "column": 3
+            },
+            {
+              "title": "Mobile navigation",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 25,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 30515,
+                      "error": {
+                        "message": "Error: page.goto: Navigation to \"http://localhost:3000/\" is interrupted by another navigation to \"http://localhost:3000/\"\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "Error: page.goto: Navigation to \"http://localhost:3000/\" is interrupted by another navigation to \"http://localhost:3000/\"\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:97:16",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 16,
+                          "line": 97
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  95 |\u001b[39m     \n \u001b[90m  96 |\u001b[39m     \u001b[90m// Navigate to home\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  97 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  98 |\u001b[39m     \n \u001b[90m  99 |\u001b[39m     \u001b[90m// Wait a bit for mobile nav to render\u001b[39m\n \u001b[90m 100 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 16,
+                            "line": 97
+                          },
+                          "message": "Error: page.goto: Navigation to \"http://localhost:3000/\" is interrupted by another navigation to \"http://localhost:3000/\"\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m  95 |\u001b[39m     \n \u001b[90m  96 |\u001b[39m     \u001b[90m// Navigate to home\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  97 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  98 |\u001b[39m     \n \u001b[90m  99 |\u001b[39m     \u001b[90m// Wait a bit for mobile nav to render\u001b[39m\n \u001b[90m 100 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:97:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:35:29.480Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features-Testing-Mobile-navigation-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features-Testing-Mobile-navigation-webkit/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features-Testing-Mobile-navigation-webkit/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 16,
+                        "line": 97
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-ac733f4d63e8b4c22f5f",
+              "file": "improvements.spec.ts",
+              "line": 92,
+              "column": 3
+            },
+            {
+              "title": "Error boundary functionality",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 26,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 27482,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 16,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Start from home page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\n \u001b[90m 9 |\u001b[39m   test(\u001b[32m'Dashboard - Real-time statistics'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:35:34.430Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--aeb3d-rror-boundary-functionality-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features--aeb3d-rror-boundary-functionality-webkit/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 16,
+                        "line": 6
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-0e2868ce20955b9e280c",
+              "file": "improvements.spec.ts",
+              "line": 130,
+              "column": 3
+            },
+            {
+              "title": "Toast notifications",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 27,
+                      "parallelIndex": 0,
+                      "status": "interrupted",
+                      "duration": 22912,
+                      "error": {
+                        "message": "Error: page.goto: Test ended.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "Error: page.goto: Test ended.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:157:16",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 16,
+                          "line": 157
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 155 |\u001b[39m   test(\u001b[32m'Toast notifications'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 156 |\u001b[39m     \u001b[90m// Navigate to a page that might trigger toasts\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 157 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/dashboard'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 158 |\u001b[39m     \n \u001b[90m 159 |\u001b[39m     \u001b[90m// Check if Toaster component is mounted\u001b[39m\n \u001b[90m 160 |\u001b[39m     \u001b[36mconst\u001b[39m toaster \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-sonner-toaster]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 16,
+                            "line": 157
+                          },
+                          "message": "Error: page.goto: Test ended.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 155 |\u001b[39m   test(\u001b[32m'Toast notifications'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 156 |\u001b[39m     \u001b[90m// Navigate to a page that might trigger toasts\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 157 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/dashboard'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 158 |\u001b[39m     \n \u001b[90m 159 |\u001b[39m     \u001b[90m// Check if Toaster component is mounted\u001b[39m\n \u001b[90m 160 |\u001b[39m     \u001b[36mconst\u001b[39m toaster \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-sonner-toaster]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:157:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:35:42.091Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features-Testing-Toast-notifications-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-New-Features-Testing-Toast-notifications-webkit/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 16,
+                        "line": 157
+                      }
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-50575cd1beb22a0c71a4",
+              "file": "improvements.spec.ts",
+              "line": 155,
+              "column": 3
+            },
+            {
+              "title": "API integration with error handling",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 28,
+                      "parallelIndex": 4,
+                      "status": "interrupted",
+                      "duration": 3365,
+                      "error": {
+                        "message": "Error: browserContext.newPage: Test ended.",
+                        "stack": "Error: browserContext.newPage: Test ended."
+                      },
+                      "errors": [
+                        {
+                          "message": "Error: browserContext.newPage: Test ended."
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:35:58.550Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-36050f8ceb19cb2f1b2f",
+              "file": "improvements.spec.ts",
+              "line": 172,
+              "column": 3
+            },
+            {
+              "title": "Database connectivity",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 29,
+                      "parallelIndex": 5,
+                      "status": "skipped",
+                      "duration": 2,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:36:11.206Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-0363e035ffc363421112",
+              "file": "improvements.spec.ts",
+              "line": 190,
+              "column": 3
+            },
+            {
+              "title": "Dashboard - Real-time statistics",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-af5481ce876795d5bd1a",
+              "file": "improvements.spec.ts",
+              "line": 9,
+              "column": 3
+            },
+            {
+              "title": "Analytics - Interactive charts",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-d3b1015892b88bc7223c",
+              "file": "improvements.spec.ts",
+              "line": 29,
+              "column": 3
+            },
+            {
+              "title": "Filtering system on spots page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-c526fff897a075caec62",
+              "file": "improvements.spec.ts",
+              "line": 56,
+              "column": 3
+            },
+            {
+              "title": "Mobile navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-72528dbb01c3191548fc",
+              "file": "improvements.spec.ts",
+              "line": 92,
+              "column": 3
+            },
+            {
+              "title": "Error boundary functionality",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-386677aaa90b13451bf0",
+              "file": "improvements.spec.ts",
+              "line": 130,
+              "column": 3
+            },
+            {
+              "title": "Toast notifications",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-a6b5acfb41f45aa7046b",
+              "file": "improvements.spec.ts",
+              "line": 155,
+              "column": 3
+            },
+            {
+              "title": "API integration with error handling",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-6506dd56ffca5fb94216",
+              "file": "improvements.spec.ts",
+              "line": 172,
+              "column": 3
+            },
+            {
+              "title": "Database connectivity",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-6f44c36aca12e3e67a44",
+              "file": "improvements.spec.ts",
+              "line": 190,
+              "column": 3
+            },
+            {
+              "title": "Dashboard - Real-time statistics",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari",
+                  "projectName": "mobile-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-fe55bc289d247c298f07",
+              "file": "improvements.spec.ts",
+              "line": 9,
+              "column": 3
+            },
+            {
+              "title": "Analytics - Interactive charts",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari",
+                  "projectName": "mobile-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-6b1dca306cca9ca7367a",
+              "file": "improvements.spec.ts",
+              "line": 29,
+              "column": 3
+            },
+            {
+              "title": "Filtering system on spots page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari",
+                  "projectName": "mobile-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-18dfeb309916dd40e35d",
+              "file": "improvements.spec.ts",
+              "line": 56,
+              "column": 3
+            },
+            {
+              "title": "Mobile navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari",
+                  "projectName": "mobile-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-f8d479b44cf87402a059",
+              "file": "improvements.spec.ts",
+              "line": 92,
+              "column": 3
+            },
+            {
+              "title": "Error boundary functionality",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari",
+                  "projectName": "mobile-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-153431168cbe12698c69",
+              "file": "improvements.spec.ts",
+              "line": 130,
+              "column": 3
+            },
+            {
+              "title": "Toast notifications",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari",
+                  "projectName": "mobile-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-b6ce219da1f554beae5c",
+              "file": "improvements.spec.ts",
+              "line": 155,
+              "column": 3
+            },
+            {
+              "title": "API integration with error handling",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari",
+                  "projectName": "mobile-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-cb46ae55d07553203a1e",
+              "file": "improvements.spec.ts",
+              "line": 172,
+              "column": 3
+            },
+            {
+              "title": "Database connectivity",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari",
+                  "projectName": "mobile-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-ca9a562cbcde42aecd5f",
+              "file": "improvements.spec.ts",
+              "line": 190,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Responsive Design",
+          "file": "improvements.spec.ts",
+          "line": 211,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Dashboard renders correctly on Mobile",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 18349,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:222:18",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 18,
+                          "line": 222
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 220 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39msetViewportSize({ width\u001b[33m:\u001b[39m viewport\u001b[33m.\u001b[39mwidth\u001b[33m,\u001b[39m height\u001b[33m:\u001b[39m viewport\u001b[33m.\u001b[39mheight })\u001b[33m;\u001b[39m\n \u001b[90m 221 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 222 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/dashboard'\u001b[39m\u001b[33m,\u001b[39m { \n \u001b[90m     |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 223 |\u001b[39m         waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m \n \u001b[90m 224 |\u001b[39m         timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m \n \u001b[90m 225 |\u001b[39m       })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 18,
+                            "line": 222
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 220 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39msetViewportSize({ width\u001b[33m:\u001b[39m viewport\u001b[33m.\u001b[39mwidth\u001b[33m,\u001b[39m height\u001b[33m:\u001b[39m viewport\u001b[33m.\u001b[39mheight })\u001b[33m;\u001b[39m\n \u001b[90m 221 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 222 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/dashboard'\u001b[39m\u001b[33m,\u001b[39m { \n \u001b[90m     |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 223 |\u001b[39m         waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m \n \u001b[90m 224 |\u001b[39m         timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m \n \u001b[90m 225 |\u001b[39m       })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:222:18\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:34:18.230Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-Responsive-De-625cc-renders-correctly-on-Mobile-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-Responsive-De-625cc-renders-correctly-on-Mobile-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 18,
+                        "line": 222
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-f1f3441d3d2f9f25b11d",
+              "file": "improvements.spec.ts",
+              "line": 219,
+              "column": 5
+            },
+            {
+              "title": "Dashboard renders correctly on Tablet",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 18341,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:222:18",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 18,
+                          "line": 222
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 220 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39msetViewportSize({ width\u001b[33m:\u001b[39m viewport\u001b[33m.\u001b[39mwidth\u001b[33m,\u001b[39m height\u001b[33m:\u001b[39m viewport\u001b[33m.\u001b[39mheight })\u001b[33m;\u001b[39m\n \u001b[90m 221 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 222 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/dashboard'\u001b[39m\u001b[33m,\u001b[39m { \n \u001b[90m     |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 223 |\u001b[39m         waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m \n \u001b[90m 224 |\u001b[39m         timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m \n \u001b[90m 225 |\u001b[39m       })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 18,
+                            "line": 222
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 220 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39msetViewportSize({ width\u001b[33m:\u001b[39m viewport\u001b[33m.\u001b[39mwidth\u001b[33m,\u001b[39m height\u001b[33m:\u001b[39m viewport\u001b[33m.\u001b[39mheight })\u001b[33m;\u001b[39m\n \u001b[90m 221 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 222 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/dashboard'\u001b[39m\u001b[33m,\u001b[39m { \n \u001b[90m     |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 223 |\u001b[39m         waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m \n \u001b[90m 224 |\u001b[39m         timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m \n \u001b[90m 225 |\u001b[39m       })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:222:18\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:34:18.360Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-Responsive-De-2bb09-renders-correctly-on-Tablet-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-Responsive-De-2bb09-renders-correctly-on-Tablet-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 18,
+                        "line": 222
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-c2b0972c4631bfeb345b",
+              "file": "improvements.spec.ts",
+              "line": 219,
+              "column": 5
+            },
+            {
+              "title": "Dashboard renders correctly on Desktop",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 18313,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:222:18",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 18,
+                          "line": 222
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 220 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39msetViewportSize({ width\u001b[33m:\u001b[39m viewport\u001b[33m.\u001b[39mwidth\u001b[33m,\u001b[39m height\u001b[33m:\u001b[39m viewport\u001b[33m.\u001b[39mheight })\u001b[33m;\u001b[39m\n \u001b[90m 221 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 222 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/dashboard'\u001b[39m\u001b[33m,\u001b[39m { \n \u001b[90m     |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 223 |\u001b[39m         waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m \n \u001b[90m 224 |\u001b[39m         timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m \n \u001b[90m 225 |\u001b[39m       })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 18,
+                            "line": 222
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/dashboard\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 220 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39msetViewportSize({ width\u001b[33m:\u001b[39m viewport\u001b[33m.\u001b[39mwidth\u001b[33m,\u001b[39m height\u001b[33m:\u001b[39m viewport\u001b[33m.\u001b[39mheight })\u001b[33m;\u001b[39m\n \u001b[90m 221 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 222 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://localhost:3000/dashboard'\u001b[39m\u001b[33m,\u001b[39m { \n \u001b[90m     |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 223 |\u001b[39m         waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m\u001b[33m,\u001b[39m \n \u001b[90m 224 |\u001b[39m         timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m \n \u001b[90m 225 |\u001b[39m       })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:222:18\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:34:18.400Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-Responsive-De-ea430-enders-correctly-on-Desktop-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-Responsive-De-ea430-enders-correctly-on-Desktop-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 18,
+                        "line": 222
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-0fbb0cdca173b5debd4f",
+              "file": "improvements.spec.ts",
+              "line": 219,
+              "column": 5
+            },
+            {
+              "title": "Dashboard renders correctly on Mobile",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 16246,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Total Spots')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Total Spots')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Total Spots')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Total Spots')\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:228:54",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 54,
+                          "line": 228
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 226 |\u001b[39m       \n \u001b[90m 227 |\u001b[39m       \u001b[90m// Check if dashboard is visible\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 228 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Total Spots'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 229 |\u001b[39m       \n \u001b[90m 230 |\u001b[39m       \u001b[90m// Take screenshot for visual verification\u001b[39m\n \u001b[90m 231 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({ \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 54,
+                            "line": 228
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Total Spots')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Total Spots')\u001b[22m\n\n\n\u001b[0m \u001b[90m 226 |\u001b[39m       \n \u001b[90m 227 |\u001b[39m       \u001b[90m// Check if dashboard is visible\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 228 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Total Spots'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 229 |\u001b[39m       \n \u001b[90m 230 |\u001b[39m       \u001b[90m// Take screenshot for visual verification\u001b[39m\n \u001b[90m 231 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({ \u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:228:54\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:34:55.234Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-Responsive-De-625cc-renders-correctly-on-Mobile-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-Responsive-De-625cc-renders-correctly-on-Mobile-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-Responsive-De-625cc-renders-correctly-on-Mobile-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 54,
+                        "line": 228
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-8d7d7e4ed28a895fa656",
+              "file": "improvements.spec.ts",
+              "line": 219,
+              "column": 5
+            },
+            {
+              "title": "Dashboard renders correctly on Tablet",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 16496,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Total Spots')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Total Spots')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Total Spots')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Total Spots')\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:228:54",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 54,
+                          "line": 228
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 226 |\u001b[39m       \n \u001b[90m 227 |\u001b[39m       \u001b[90m// Check if dashboard is visible\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 228 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Total Spots'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 229 |\u001b[39m       \n \u001b[90m 230 |\u001b[39m       \u001b[90m// Take screenshot for visual verification\u001b[39m\n \u001b[90m 231 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({ \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 54,
+                            "line": 228
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Total Spots')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Total Spots')\u001b[22m\n\n\n\u001b[0m \u001b[90m 226 |\u001b[39m       \n \u001b[90m 227 |\u001b[39m       \u001b[90m// Check if dashboard is visible\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 228 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Total Spots'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 229 |\u001b[39m       \n \u001b[90m 230 |\u001b[39m       \u001b[90m// Take screenshot for visual verification\u001b[39m\n \u001b[90m 231 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({ \u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:228:54\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:35:02.019Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-Responsive-De-2bb09-renders-correctly-on-Tablet-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-Responsive-De-2bb09-renders-correctly-on-Tablet-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-Responsive-De-2bb09-renders-correctly-on-Tablet-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 54,
+                        "line": 228
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-9af39ca0c06eab76a7c2",
+              "file": "improvements.spec.ts",
+              "line": 219,
+              "column": 5
+            },
+            {
+              "title": "Dashboard renders correctly on Desktop",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 22806,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Total Spots')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Total Spots')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Total Spots')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Total Spots')\u001b[22m\n\n    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:228:54",
+                        "location": {
+                          "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                          "column": 54,
+                          "line": 228
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 226 |\u001b[39m       \n \u001b[90m 227 |\u001b[39m       \u001b[90m// Check if dashboard is visible\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 228 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Total Spots'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 229 |\u001b[39m       \n \u001b[90m 230 |\u001b[39m       \u001b[90m// Take screenshot for visual verification\u001b[39m\n \u001b[90m 231 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({ \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                            "column": 54,
+                            "line": 228
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Total Spots')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Total Spots')\u001b[22m\n\n\n\u001b[0m \u001b[90m 226 |\u001b[39m       \n \u001b[90m 227 |\u001b[39m       \u001b[90m// Check if dashboard is visible\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 228 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Total Spots'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 229 |\u001b[39m       \n \u001b[90m 230 |\u001b[39m       \u001b[90m// Take screenshot for visual verification\u001b[39m\n \u001b[90m 231 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({ \u001b[0m\n\u001b[2m    at /Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts:228:54\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:35:05.865Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-Responsive-De-ea430-enders-correctly-on-Desktop-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-Responsive-De-ea430-enders-correctly-on-Desktop-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/aryaminakshi/Desktop/newapp/Surprise/test-results/improvements-Responsive-De-ea430-enders-correctly-on-Desktop-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/aryaminakshi/Desktop/newapp/Surprise/e2e/improvements.spec.ts",
+                        "column": 54,
+                        "line": 228
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-c7b850b07c9e1005b185",
+              "file": "improvements.spec.ts",
+              "line": 219,
+              "column": 5
+            },
+            {
+              "title": "Dashboard renders correctly on Mobile",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 30,
+                      "parallelIndex": 3,
+                      "status": "skipped",
+                      "duration": 3,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-08T09:36:11.312Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-185035ff590a2ed07000",
+              "file": "improvements.spec.ts",
+              "line": 219,
+              "column": 5
+            },
+            {
+              "title": "Dashboard renders correctly on Tablet",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-d3797389332531810ab1",
+              "file": "improvements.spec.ts",
+              "line": 219,
+              "column": 5
+            },
+            {
+              "title": "Dashboard renders correctly on Desktop",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-69e1927e5dc97c3b1d92",
+              "file": "improvements.spec.ts",
+              "line": 219,
+              "column": 5
+            },
+            {
+              "title": "Dashboard renders correctly on Mobile",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-389687a7b60fe8b63a30",
+              "file": "improvements.spec.ts",
+              "line": 219,
+              "column": 5
+            },
+            {
+              "title": "Dashboard renders correctly on Tablet",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-670c7bdf97b8a438ca11",
+              "file": "improvements.spec.ts",
+              "line": 219,
+              "column": 5
+            },
+            {
+              "title": "Dashboard renders correctly on Desktop",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-fbeddd57e75712369bb0",
+              "file": "improvements.spec.ts",
+              "line": 219,
+              "column": 5
+            },
+            {
+              "title": "Dashboard renders correctly on Mobile",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari",
+                  "projectName": "mobile-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-6c2709a30d686cab6547",
+              "file": "improvements.spec.ts",
+              "line": 219,
+              "column": 5
+            },
+            {
+              "title": "Dashboard renders correctly on Tablet",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari",
+                  "projectName": "mobile-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-12905b6523729820e5c8",
+              "file": "improvements.spec.ts",
+              "line": 219,
+              "column": 5
+            },
+            {
+              "title": "Dashboard renders correctly on Desktop",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-safari",
+                  "projectName": "mobile-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a8b2a7197a4f2cf930ee-00b7124ce28e3581887b",
+              "file": "improvements.spec.ts",
+              "line": 219,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-02-08T09:33:51.143Z",
+    "duration": 140273.236,
+    "expected": 0,
+    "skipped": 28,
+    "unexpected": 27,
+    "flaky": 0
+  }
+}
